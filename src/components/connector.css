@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+   }
+   
+   .App {
+    text-align: center;
+    padding: 10px;
+   }
+   
+   input {
+    margin: 10px;
+    padding: 10px;
+   }
+   
+   button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+   }
+   
+   button:hover {
+    background-color: #0056b3;
+   }
+   tr:hover{
+
+    background-color: black;
+    color:aliceblue;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-decoration: dotted;
+    text-shadow: 0cqh;
+   }
+   input:hover{
+
+    background-color: rgb(6, 6, 6);
+    color: azure;
+   }
+   *:window-inactive{
+    background-color: aqua;
+    color:black;
+   }
+   
+   
