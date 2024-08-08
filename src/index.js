@@ -5,12 +5,14 @@ import "./index.css";
 import Home from "./components/Home";
 //import ReactComponent from "./components/connector";
 
-import Pap1 from "./components/connector2";
+
+import UploadForm from "./src-2/Photodb";
+
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Home />
-    <Pap1 />
+<App/>
   </React.StrictMode>
 );

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import me1 from "../Assets/1712426977213-me1.png";
 
 const UploadForm = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -23,7 +22,7 @@ const UploadForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4500/upload",
+        "http://localhost:4520/upload",
         formData,
         {
           headers: {
@@ -36,22 +35,37 @@ const UploadForm = () => {
       console.error("Error uploading photo:", error);
       setMessage("Error uploading photo. Please try again.");
     }
-  };
-  const [data, setData] = useState("");
+  };const [data, setData] = useState(""); 
+  
+  useEffect(() => {
+      fetch("http://localhost:4520/download/1")
+        .then((resp) => resp.json())
+        .then((apiData) => {
+          setData(apiData);
+        });
+    }, []);
+
+  
   const handleDownload = async (event) => {
     event.preventDefault();
-    try {
-      const response = await fetch(`http://localhost:4500/download`);
+     setMe(true);
+
+   /* try {
+      const response = await fetch(`http://localhost:4520/download/1`);
       const data = await response.json();
       if (data.length === 0) {
       } else {
         setData(data);
-        setMe(true);
+      
       }
     } catch (error) {
       console.error("Error:", error);
-    }
+    }*/
   };
+  
+
+
+
   var ram;
   return (
     <div>
@@ -61,6 +75,7 @@ const UploadForm = () => {
           Send Photo
         </button>
       </form>
+      
       <p>{message}</p>
       <button onClick={handleDownload} name="button">
         Click Me
@@ -68,12 +83,13 @@ const UploadForm = () => {
       <ul>
         <li>
           {me &&
-            data.map((item) => (
-              <img src={item.PHOTONAME} alt="Robert" width={80} />
-            ))}
+           
+              <img src={data} alt="Robert" width={80} /> 
+        
+          }
+         
         </li>
       </ul>
-      <img src={me1} alt="RObert" width={70} />
     </div>
   );
 };

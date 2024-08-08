@@ -1,0 +1,170 @@
+{
+    "currencies": [
+      {
+        "code": "USD",
+        "symbol": "$",
+        "flag": "https://flagcdn.com/us.svg"
+      },
+      {
+        "code": "EUR",
+        "symbol": "€",
+        "flag": "https://flagcdn.com/eu.svg"
+      },
+      {
+        "code": "JPY",
+        "symbol": "¥",
+        "flag": "https://flagcdn.com/jp.svg"
+      },
+      {
+        "code": "GBP",
+        "symbol": "£",
+        "flag": "https://flagcdn.com/gb.svg"
+      },
+      {
+        "code": "AUD",
+        "symbol": "A$",
+        "flag": "https://flagcdn.com/au.svg"
+      },
+      {
+        "code": "CAD",
+        "symbol": "C$",
+        "flag": "https://flagcdn.com/ca.svg"
+      },
+      {
+        "code": "CHF",
+        "symbol": "CHF",
+        "flag": "https://flagcdn.com/ch.svg"
+      },
+      {
+        "code": "CNY",
+        "symbol": "¥",
+        "flag": "https://flagcdn.com/cn.svg"
+      },
+      {
+        "code": "SEK",
+        "symbol": "kr",
+        "flag": "https://flagcdn.com/se.svg"
+      },
+      {
+        "code": "NZD",
+        "symbol": "NZ$",
+        "flag": "https://flagcdn.com/nz.svg"
+      },
+      {
+        "code": "MXN",
+        "symbol": "$",
+        "flag": "https://flagcdn.com/mx.svg"
+      },
+      {
+        "code": "SGD",
+        "symbol": "S$",
+        "flag": "https://flagcdn.com/sg.svg"
+      },
+      {
+        "code": "HKD",
+        "symbol": "HK$",
+        "flag": "https://flagcdn.com/hk.svg"
+      },
+      {
+        "code": "NOK",
+        "symbol": "kr",
+        "flag": "https://flagcdn.com/no.svg"
+      },
+      {
+        "code": "KRW",
+        "symbol": "₩",
+        "flag": "https://flagcdn.com/kr.svg"
+      },
+      {
+        "code": "TRY",
+        "symbol": "₺",
+        "flag": "https://flagcdn.com/tr.svg"
+      },
+      {
+        "code": "INR",
+        "symbol": "₹",
+        "flag": "https://flagcdn.com/in.svg"
+      },
+      {
+        "code": "RUB",
+        "symbol": "₽",
+        "flag": "https://flagcdn.com/ru.svg"
+      },
+      {
+        "code": "BRL",
+        "symbol": "R$",
+        "flag": "https://flagcdn.com/br.svg"
+      },
+      {
+        "code": "ZAR",
+        "symbol": "R",
+        "flag": "https://flagcdn.com/za.svg"
+      },
+      {
+        "code": "MYR",
+        "symbol": "RM",
+        "flag": "https://flagcdn.com/my.svg"
+      },
+      {
+        "code": "PHP",
+        "symbol": "₱",
+        "flag": "https://flagcdn.com/ph.svg"
+      },
+      {
+        "code": "IDR",
+        "symbol": "Rp",
+        "flag": "https://flagcdn.com/id.svg"
+      },
+      {
+        "code": "THB",
+        "symbol": "฿",
+        "flag": "https://flagcdn.com/th.svg"
+      },
+      {
+        "code": "VND",
+        "symbol": "₫",
+        "flag": "https://flagcdn.com/vn.svg"
+      },
+      {
+        "code": "PLN",
+        "symbol": "zł",
+        "flag": "https://flagcdn.com/pl.svg"
+      },
+      {
+        "code": "ILS",
+        "symbol": "₪",
+        "flag": "https://flagcdn.com/il.svg"
+      },
+      {
+        "code": "HUF",
+        "symbol": "Ft",
+        "flag": "https://flagcdn.com/hu.svg"
+      },
+      {
+        "code": "CZK",
+        "symbol": "Kč",
+        "flag": "https://flagcdn.com/cz.svg"
+      },
+      {
+        "code": "XAF",
+        "symbol": "FCFA",
+        "flag": "https://flagcdn.com/cm.svg"
+      },
+      {
+        "code": "NGN",
+        "symbol": "₦",
+        "flag": "https://flagcdn.com/ng.svg"
+      },
+      {
+        "code": "ZAR",
+        "symbol": "R",
+        "flag": "https://flagcdn.com/za.svg"
+      },
+      {
+        "code": "EGP",
+        "symbol": "£",
+        "flag": "https://flagcdn.com/eg.svg"
+      }
+    ]
+  }
+  
