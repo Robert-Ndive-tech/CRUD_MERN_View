@@ -110,8 +110,8 @@ const CurrencyConverter2 = () => {
       )}
 <div>
    <h1> FROM MY ANALYSIS I FOUND TWO INTERESING ONLINE  Paid API'S</h1>
-    WHICH ARE <p>fixer.io(has a free tier 1000request/month and daily updates with its minimum plan of 11$/month,has 170 curriences) WHILE
-    </p><p>OpenExchangeRate has( no free tier,has 200 currencies,minimum plan is 12$/month)</p> 
+    WHICH ARE <h5>fixer.io(has a free tier 1000request/month and daily updates with its minimum plan of 11$/month,has 170 curriences) WHILE
+    </h5><h5>OpenExchangeRate has( no free tier,has 200 currencies,minimum plan is 12$/month)</h5> 
 </div>
 
 
