@@ -41,8 +41,8 @@ const CurrencyConverter2 = () => {
 
   return (
     <div style={{ maxWidth: "400px", margin: "auto", textAlign: "center" }}>
-      <h2 color="blue">Currency Converter using ExchageRate API</h2>
-      <h4 color="blue">(minimum plan of $14.99/month,has a free tier(1500request/month), with minimun tier(30,000request/month))</h4>
+      <h2 style={{color:"Blue",fontWeight:"bolder"}}>Currency Converter using ExchageRate API</h2>
+      <h4 style={{color:"Blue",fontWeight:"bolder"}}>(minimum plan of $14.99/month,has a free tier(1500request/month), with minimun tier(30,000request/month))</h4>
       <input
         type="number"
         value={amount}
@@ -110,8 +110,8 @@ const CurrencyConverter2 = () => {
       )}
 <div>
    <h1> FROM MY ANALYSIS I FOUND TWO INTERESING ONLINE  Paid API'S</h1>
-    WHICH ARE fixer.io(has a free tier 1000request/month and daily updates with its minimum plan of 11$/month,has 170 curriences) WHILE
-    OpenExchangeRate has( no free tier,has 200 currencies,minimum plan is 12$/month)
+    WHICH ARE <p>fixer.io(has a free tier 1000request/month and daily updates with its minimum plan of 11$/month,has 170 curriences) WHILE
+    </p><p>OpenExchangeRate has( no free tier,has 200 currencies,minimum plan is 12$/month)</p> 
 </div>
 
 
