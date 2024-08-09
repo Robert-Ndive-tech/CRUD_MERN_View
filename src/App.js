@@ -4,12 +4,12 @@ import Calculator from "./src-2/Exchange";
 import CurrencyConverter from "./src-2/ExchangeTest2";
 import CurrencyC from "./src-2/ExchangeMe";
 import CurrencyConverter2 from "./src-2/Exchange";
+import CurrencyConverter4 from "./src-2/ExchangeMe";
 
 const App = () => {
 
   return <div>
-
-<CurrencyConverter2/>
+<CurrencyConverter4/>
 
   </div>
 

@@ -1,5 +1,11 @@
 {
     "currencies": [
+        {
+            "id": 1,
+            "code": "AUD",
+            "rate": "0.34"
+            
+        },
       {
         "code": "USD",
         "symbol": "$",

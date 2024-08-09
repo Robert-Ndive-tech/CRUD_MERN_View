@@ -4,6 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "@tanstack/react-query": "^5.51.23",
     "axios": "^1.6.8",
     "cra-template": "1.2.0",
     "emailjs-com": "^3.2.0",
