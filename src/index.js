@@ -7,12 +7,21 @@ import Home from "./components/Home";
 
 
 import UploadForm from "./src-2/Photodb";
+import { Provider } from 'react-redux';
 
 import App from "./App";
+import store from "./NewTestsRedux/Testing56";
+import MyComponent from "./TEST/NewTest";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-<App/>
+
+
+<MyComponent/>
+
+
   </React.StrictMode>
 );

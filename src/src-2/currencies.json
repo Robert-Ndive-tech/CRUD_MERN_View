@@ -1,11 +1,10 @@
 {
     "currencies": [
-        {
-            "id": 1,
-            "code": "AUD",
-            "rate": "0.34"
-            
-        },
+      {
+        "code": "Countrycode",
+        "symbol": ".",
+        "flag": "https://flagcdn.com/us.svg1"
+      },
       {
         "code": "USD",
         "symbol": "$",

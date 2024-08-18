@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import Register from "./pages/Register";
 import Calculator from "./src-2/Exchange";
-import CurrencyConverter from "./src-2/ExchangeTest2";
-import CurrencyC from "./src-2/ExchangeMe";
-import CurrencyConverter2 from "./src-2/Exchange";
-import CurrencyConverter4 from "./src-2/ExchangeMe";
+
+
+import UpdateString from "./NewTestsRedux/UpdatingGlobal";
+import DisplayString from "./NewTestsRedux/DisplayGlobal";
+import NumberInput from "./TEST/conversion";
+import NumberInput1 from "./TEST/coversion2";
 
 const App = () => {
 
   return <div>
-<CurrencyConverter4/>
+
+<NumberInput1/>
+<NumberInput/>
+
 
   </div>
 

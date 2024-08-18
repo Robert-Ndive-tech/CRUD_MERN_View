@@ -2,7 +2,7 @@ import React, { useState ,useEffect} from "react";
 import currencies from "./currencies.json";
 
 const CurrencyConverter4 = () => {
-
+    
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("XAF");
@@ -10,6 +10,10 @@ const CurrencyConverter4 = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [rates,setRate]=useState(0.001)
+  const [currency, setCurrency] = useState([]);
+
+  const [selectedCurrency, setSelectedCurrency] = useState(null);
+
 
   useEffect(() => {
     const handleConvert = async () => {
@@ -17,16 +21,20 @@ const CurrencyConverter4 = () => {
       setError(null);
       try {
         const response = await fetch(
-          `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`
+          `https://dashboard.getquickgrab.com/api/getcurrencies`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch exchange rate");
         }
         const data = await response.json();
-        const rate = data.rates[toCurrency];
-        setRate(rate);
-        const result = amount * rate;
-        setConversionResult(result);
+        setCurrency(data);  
+          const usdCurrency = currency.find(currency => currency.code === fromCurrency);
+          setSelectedCurrency(usdCurrency || null);
+       
+          const result = amount * usdCurrency.rate
+          setConversionResult(result)
+
+        
       } catch (err) {
         setError(err.message);
       } finally {
@@ -39,6 +47,7 @@ const getCurrencyDetails = (currencyCode) => {
       (currency) => currency.code === currencyCode
     );
   };
+
 
   const fromCurrencyDetails = getCurrencyDetails(fromCurrency);
   const toCurrencyDetails = getCurrencyDetails(toCurrency);
@@ -54,8 +63,8 @@ const getCurrencyDetails = (currencyCode) => {
         onChange={(e) => setAmount(e.target.value)}
         placeholder="Amount"
         style={{ width: "100%", padding: "8px", marginBottom: "10px" }}
+        min="5000"
       />
-
 
       <div style={{ marginBottom: "10px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center" }}>
@@ -67,9 +76,11 @@ const getCurrencyDetails = (currencyCode) => {
 
           <select
             value={fromCurrency}
-            onChange={(e) => setFromCurrency(e.target.value)}
+            onChange={(e)=>setFromCurrency(e.target.value)}
+          
             style={{ padding: "8px", marginRight: "10px" }}
           >
+
 
             {currencies.currencies.map((currency) => (
               <option key={currency.code} value={currency.code}>
@@ -77,11 +88,11 @@ const getCurrencyDetails = (currencyCode) => {
               </option>
             ))}
 
+
           </select>
 
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-
           <img
             src={toCurrencyDetails.flag}
             alt={toCurrency}
@@ -104,6 +115,7 @@ const getCurrencyDetails = (currencyCode) => {
       </div>
 
     
+
       {loading && <p>Loading...</p>}
 
       {error && <p style={{ color: "red" }}>{error}</p>}
@@ -114,7 +126,12 @@ const getCurrencyDetails = (currencyCode) => {
         </p>
       )}
 <div>
-<div>ExchangeRate: {rates}</div>
+<div>ExchangeRate: 
+      {selectedCurrency ? 
+       selectedCurrency.rate
+           : (
+        <p>No USD data available.</p>
+      )}</div>
 
 
 
