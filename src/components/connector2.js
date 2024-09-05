@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import './connector.css';
 
-import "./connector.css";
+import React, { useState } from 'react';
 
 function Product() {
   const [data, setData] = useState([]);
@@ -10,7 +10,7 @@ function Product() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch(`http://localhost:4500/products/display`);
+      const response = await fetch(`http://localhost:4520/products/display`);
       const data = await response.json();
       if (data.length === 0) {
       } else {
@@ -72,7 +72,7 @@ function Pap1() {
     event.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:4500/brands/display/${name}`
+        `http://localhost:4520/brands/display/${name}`
       );
       const data = await response.json();
       if (data.length === 0) {
@@ -134,7 +134,7 @@ function Customer() {
     event.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:4500/customers/display/${name}`
+        `http://localhost:4520/customers/display/${name}`
       );
       const data = await response.json();
       if (data.length === 0) {

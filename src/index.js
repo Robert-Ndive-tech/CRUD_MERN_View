@@ -1,26 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
+import './index.css';
 
-import Home from "./components/Home";
-//import ReactComponent from "./components/connector";
+import React from 'react';
 
+import ReactDOM from 'react-dom/client';
 
-import UploadForm from "./src-2/Photodb";
-import { Provider } from 'react-redux';
-
-import App from "./App";
-import store from "./NewTestsRedux/Testing56";
-import MyComponent from "./TEST/NewTest";
-
-
+import Pap1 from './components/connector2';
+import UploadForm from './src-2/Photodb';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
 
+<Pap1/>
 
-<MyComponent/>
+<UploadForm/>
 
 
   </React.StrictMode>

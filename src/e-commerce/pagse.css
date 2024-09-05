@@ -1,0 +1,61 @@
+
+
+.Container{
+    background-color: bisque;
+    display: flexbox;
+    flex-direction: row;
+    position: relative;
+    height: 55vw;
+text-align: center;
+}
+
+
+/* Fixing the body content display of the items*/
+.head{
+height: 25%;
+background-color: rgb(232, 239, 237);
+}
+.body{
+    height: 50%;
+    background-color: rgb(197, 200, 198);
+    display: flex;
+    padding: 20 0;
+    justify-content: center;
+
+   
+}
+
+.tail{
+    height: 25%;
+    background-color: rgb(232, 239, 237);
+}
+
+
+/* Displaying Items in Row */
+
+.item1{
+  width: 20%;
+  border-color: beige;
+  background-color: aquamarine;
+    flex-direction: row;
+    align-items: center;
+    
+
+    
+}
+.item2{
+    width: 20%;
+
+    border-color: beige;
+    background-color: rgb(255, 161, 127);
+      flex-direction: row;
+      align-items: center;
+      
+  }
+  .item3{
+    width: 20%;
+    border-color: beige;
+    background-color: rgb(33, 3, 109);
+      flex-direction: row;
+      align-items: center;
+  }

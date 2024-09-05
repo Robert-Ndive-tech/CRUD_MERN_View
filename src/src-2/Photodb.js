@@ -1,5 +1,9 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, {
+  useEffect,
+  useState,
+} from 'react';
+
+import axios from 'axios';
 
 const UploadForm = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -35,7 +39,7 @@ const UploadForm = () => {
       console.error("Error uploading photo:", error);
       setMessage("Error uploading photo. Please try again.");
     }
-  };const [data, setData] = useState(""); 
+  };const [data, setData] = useState(); 
   
   useEffect(() => {
       fetch("http://localhost:4520/download/1")
@@ -82,7 +86,7 @@ const UploadForm = () => {
       </button>
       <ul>
         <li>
-          {me &&
+          {data &&
            
               <img src={data} alt="Robert" width={80} /> 
         
