@@ -67,3 +67,6 @@ body {
  th {
   background-color: #f0f0f0;
  }
+ .App {
+  padding: 20px;
+}
