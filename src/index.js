@@ -4,13 +4,14 @@ import React from 'react';
 
 import ReactDOM from 'react-dom/client';
 
-import Command from './Commandexec/command';
+import CommerceDa from './e-commerce/pages';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
 
-<Command/>
+
+<CommerceDa/>
 
 
   </React.StrictMode>

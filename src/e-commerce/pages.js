@@ -1,30 +1,28 @@
-import './pagse.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Ecommerce = () => {
-   
+import React from 'react';
 
-    return (
-        <div className="Container">
-   <div className="head"> 
-   <h1>MOP TASTE SALES</h1>
-   <h2>Welcome to Mop Taste Restaurant Buea</h2>
-   </div>
-   <div className="body">Body
-   <div className="item1">
-<img src="" alt="new image"/>
-</div>
- <div className="item2">
-<img src="" alt="new image"/>
-</div>
- <div className="item3">
-<img src="" alt="new image"/>
-</div>
-   </div>
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
-   <div className="tail">Tail</div>
-          
-        </div>
-    );
-};
+function CommerceDa() {
+  return (
+    <div className="container">
+      <h1 className="text-center">React with Bootstrap and Material-UI</h1>
 
-export default Ecommerce;
+      <div className="mb-3">
+        <TextField label="Material-UI Input" variant="outlined" fullWidth />
+      </div>
+
+      <Button variant="contained" color="primary" className="mb-3">
+        Material-UI Button
+      </Button>
+
+      <button className="btn btn-primary">
+        Bootstrap Button
+      </button>
+    </div>
+  );
+}
+
+export default CommerceDa;
