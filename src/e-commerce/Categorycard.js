@@ -14,7 +14,7 @@ const CategoryCard = ({ name, items, image }) => {
         <p>{items}</p>
       </div>
       <div className="card-action">
-        <a href="#">View Prices</a>
+        <a href="google.com">View Prices</a>
       </div>
     </div>
   );
